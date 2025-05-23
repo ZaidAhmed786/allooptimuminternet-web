@@ -1,0 +1,12 @@
+.hero-bg {
+      background-image: url(/images/GirlWithPopcorn-1-2.jpg ); /* Replace with your actual image path */
+      background-size: cover;
+      background-position: center;
+    }
+
+      .half-black-bg {
+      background: linear-gradient(to right, rgba(0, 0, 0, 0.85) 50%, rgba(0, 0, 0, 0.2) 50%);
+      background-image:  url(/images/page-banner-3.webp);
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
