@@ -1,12 +1,22 @@
 .hero-bg {
-      background-image: url(/images/GirlWithPopcorn-1-2.jpg ); /* Replace with your actual image path */
-      background-size: cover;
-      background-position: center;
-    }
+  position: relative;
+  background-image: url(./images/GirlWithPopcorn-1-2.jpg);
+  background-size: cover;
+  background-position: center;
+  background-color: #0b0d11; /* Fallback */
+}
+.hero-bg::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to right, rgba(0,0,0,.6), rgba(0,0,0,.2));
+  z-index: 0;
+  pointer-events: none;
+}
 
       .half-black-bg {
       background: linear-gradient(to right, rgba(0, 0, 0, 0.85) 50%, rgba(0, 0, 0, 0.2) 50%);
-      background-image:  url(/images/page-banner-3.webp);
+      background-image:  url(./images/page-banner-3.webp);
       background-size: cover;
       background-repeat: no-repeat;
     }
